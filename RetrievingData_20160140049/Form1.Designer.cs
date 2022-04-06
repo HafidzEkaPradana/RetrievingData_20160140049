@@ -30,130 +30,124 @@ namespace RetrievingData_20160140049
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.prodiTIDataSet = new RetrievingData_20160140049.ProdiTIDataSet();
+            this.dataGrid = new System.Windows.Forms.DataGridView();
             this.mahasiswaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.prodiTIDataSet = new RetrievingData_20160140049.ProdiTIDataSet();
             this.mahasiswaTableAdapter = new RetrievingData_20160140049.ProdiTIDataSetTableAdapters.MahasiswaTableAdapter();
-            this.nIMDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.namaMhsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.alamatMhsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sexDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phoneMhsDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDUserDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prodiTIDataSet)).BeginInit();
+            this.nimDataGrid = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.namaMhsDataGrid = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.alamatMhsDataGrid = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sexDataGrid = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phoneMhsDataGrid = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mahasiswaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prodiTIDataSet)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dataGrid
             // 
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.nIMDataGridViewTextBoxColumn,
-            this.namaMhsDataGridViewTextBoxColumn,
-            this.alamatMhsDataGridViewTextBoxColumn,
-            this.sexDataGridViewTextBoxColumn,
-            this.phoneMhsDataGridViewTextBoxColumn,
-            this.iDUserDataGridViewTextBoxColumn});
-            this.dataGridView1.DataSource = this.mahasiswaBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(26, 27);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 62;
-            this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(744, 400);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // prodiTIDataSet
-            // 
-            this.prodiTIDataSet.DataSetName = "ProdiTIDataSet";
-            this.prodiTIDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.dataGrid.AutoGenerateColumns = false;
+            this.dataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.nimDataGrid,
+            this.namaMhsDataGrid,
+            this.alamatMhsDataGrid,
+            this.sexDataGrid,
+            this.phoneMhsDataGrid});
+            this.dataGrid.DataSource = this.mahasiswaBindingSource;
+            this.dataGrid.Location = new System.Drawing.Point(26, 27);
+            this.dataGrid.Name = "dataGrid";
+            this.dataGrid.RowHeadersWidth = 62;
+            this.dataGrid.RowTemplate.Height = 28;
+            this.dataGrid.Size = new System.Drawing.Size(814, 400);
+            this.dataGrid.TabIndex = 0;
             // 
             // mahasiswaBindingSource
             // 
             this.mahasiswaBindingSource.DataMember = "Mahasiswa";
             this.mahasiswaBindingSource.DataSource = this.prodiTIDataSet;
             // 
+            // prodiTIDataSet
+            // 
+            this.prodiTIDataSet.DataSetName = "ProdiTIDataSet";
+            this.prodiTIDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // mahasiswaTableAdapter
             // 
             this.mahasiswaTableAdapter.ClearBeforeFill = true;
             // 
-            // nIMDataGridViewTextBoxColumn
+            // nimDataGrid
             // 
-            this.nIMDataGridViewTextBoxColumn.DataPropertyName = "NIM";
-            this.nIMDataGridViewTextBoxColumn.HeaderText = "NIM";
-            this.nIMDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.nIMDataGridViewTextBoxColumn.Name = "nIMDataGridViewTextBoxColumn";
-            this.nIMDataGridViewTextBoxColumn.Width = 150;
+            this.nimDataGrid.DataPropertyName = "NIM";
+            this.nimDataGrid.FillWeight = 34.53333F;
+            this.nimDataGrid.HeaderText = "NIM";
+            this.nimDataGrid.MinimumWidth = 8;
+            this.nimDataGrid.Name = "nimDataGrid";
+            this.nimDataGrid.Width = 150;
             // 
-            // namaMhsDataGridViewTextBoxColumn
+            // namaMhsDataGrid
             // 
-            this.namaMhsDataGridViewTextBoxColumn.DataPropertyName = "NamaMhs";
-            this.namaMhsDataGridViewTextBoxColumn.HeaderText = "NamaMhs";
-            this.namaMhsDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.namaMhsDataGridViewTextBoxColumn.Name = "namaMhsDataGridViewTextBoxColumn";
-            this.namaMhsDataGridViewTextBoxColumn.Width = 150;
+            this.namaMhsDataGrid.DataPropertyName = "NamaMhs";
+            this.namaMhsDataGrid.FillWeight = 70.54539F;
+            this.namaMhsDataGrid.HeaderText = "NamaMhs";
+            this.namaMhsDataGrid.MinimumWidth = 8;
+            this.namaMhsDataGrid.Name = "namaMhsDataGrid";
+            this.namaMhsDataGrid.Width = 171;
             // 
-            // alamatMhsDataGridViewTextBoxColumn
+            // alamatMhsDataGrid
             // 
-            this.alamatMhsDataGridViewTextBoxColumn.DataPropertyName = "AlamatMhs";
-            this.alamatMhsDataGridViewTextBoxColumn.HeaderText = "AlamatMhs";
-            this.alamatMhsDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.alamatMhsDataGridViewTextBoxColumn.Name = "alamatMhsDataGridViewTextBoxColumn";
-            this.alamatMhsDataGridViewTextBoxColumn.Width = 150;
+            this.alamatMhsDataGrid.DataPropertyName = "AlamatMhs";
+            this.alamatMhsDataGrid.FillWeight = 89.52988F;
+            this.alamatMhsDataGrid.HeaderText = "AlamatMhs";
+            this.alamatMhsDataGrid.MinimumWidth = 8;
+            this.alamatMhsDataGrid.Name = "alamatMhsDataGrid";
+            this.alamatMhsDataGrid.Width = 180;
             // 
-            // sexDataGridViewTextBoxColumn
+            // sexDataGrid
             // 
-            this.sexDataGridViewTextBoxColumn.DataPropertyName = "Sex";
-            this.sexDataGridViewTextBoxColumn.HeaderText = "Sex";
-            this.sexDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.sexDataGridViewTextBoxColumn.Name = "sexDataGridViewTextBoxColumn";
-            this.sexDataGridViewTextBoxColumn.Width = 150;
+            this.sexDataGrid.DataPropertyName = "Sex";
+            this.sexDataGrid.FillWeight = 59.3444F;
+            this.sexDataGrid.HeaderText = "Sex";
+            this.sexDataGrid.MinimumWidth = 8;
+            this.sexDataGrid.Name = "sexDataGrid";
+            this.sexDataGrid.Width = 69;
             // 
-            // phoneMhsDataGridViewTextBoxColumn
+            // phoneMhsDataGrid
             // 
-            this.phoneMhsDataGridViewTextBoxColumn.DataPropertyName = "PhoneMhs";
-            this.phoneMhsDataGridViewTextBoxColumn.HeaderText = "PhoneMhs";
-            this.phoneMhsDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.phoneMhsDataGridViewTextBoxColumn.Name = "phoneMhsDataGridViewTextBoxColumn";
-            this.phoneMhsDataGridViewTextBoxColumn.Width = 150;
-            // 
-            // iDUserDataGridViewTextBoxColumn
-            // 
-            this.iDUserDataGridViewTextBoxColumn.DataPropertyName = "IDUser";
-            this.iDUserDataGridViewTextBoxColumn.HeaderText = "IDUser";
-            this.iDUserDataGridViewTextBoxColumn.MinimumWidth = 8;
-            this.iDUserDataGridViewTextBoxColumn.Name = "iDUserDataGridViewTextBoxColumn";
-            this.iDUserDataGridViewTextBoxColumn.Width = 150;
+            this.phoneMhsDataGrid.DataPropertyName = "PhoneMhs";
+            this.phoneMhsDataGrid.FillWeight = 96.04697F;
+            this.phoneMhsDataGrid.HeaderText = "PhoneMhs";
+            this.phoneMhsDataGrid.MinimumWidth = 8;
+            this.phoneMhsDataGrid.Name = "phoneMhsDataGrid";
+            this.phoneMhsDataGrid.Width = 180;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(862, 450);
+            this.Controls.Add(this.dataGrid);
             this.Name = "Form1";
             this.Text = "ShowData";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.prodiTIDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mahasiswaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prodiTIDataSet)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGrid;
         private ProdiTIDataSet prodiTIDataSet;
         private System.Windows.Forms.BindingSource mahasiswaBindingSource;
         private ProdiTIDataSetTableAdapters.MahasiswaTableAdapter mahasiswaTableAdapter;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nIMDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn namaMhsDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn alamatMhsDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sexDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn phoneMhsDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDUserDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nimDataGrid;
+        private System.Windows.Forms.DataGridViewTextBoxColumn namaMhsDataGrid;
+        private System.Windows.Forms.DataGridViewTextBoxColumn alamatMhsDataGrid;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sexDataGrid;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phoneMhsDataGrid;
     }
 }
 
